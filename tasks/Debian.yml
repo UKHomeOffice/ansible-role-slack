@@ -4,7 +4,7 @@
     state: present
 
 - apt_repository: 
-    repo: 'https://packagecloud.io/slacktechnologies/slack/debian/ jessie main'
+    repo: 'deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main'
     state: present
 
 - name: Update the apt cache
