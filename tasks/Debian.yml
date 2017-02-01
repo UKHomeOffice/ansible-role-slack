@@ -5,6 +5,7 @@
 
 - apt_repository: 
     repo: 'deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main'
+    mode: 0644
     state: present
 
 - name: Update the apt cache
