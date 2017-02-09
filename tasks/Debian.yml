@@ -1,10 +1,10 @@
 ---
 - apt_key:
-    url: https://packagecloud.io/slacktechnologies/slack/gpgkey
+    url: "{{ apt_slack_repo_key }}"
     state: present
 
 - apt_repository: 
-    repo: 'deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main'
+    repo: "{{ apt_slack_repo }}"
     mode: 0644
     state: present
 
