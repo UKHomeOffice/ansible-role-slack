@@ -15,5 +15,5 @@
 
 - name: Slack Install packages
   apt:
-    pkg: "slack-desktop"
+    pkg: "slack"
     state: present
